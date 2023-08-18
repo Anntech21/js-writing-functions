@@ -17,8 +17,10 @@
 2. Open your code in the browser and open your console
 
 ### Activity 1
+
 1. Navigate to your Github profile page
 2. Identify as many different pieces of functionality that likely use functions. List them in this file.
 
 ## Activity 2
-1. In the `js` file, complete the list of exercises. 
+
+1. In the `js` file, complete the list of exercises.
