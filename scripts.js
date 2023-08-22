@@ -15,22 +15,6 @@
 // 2. Fix the function so that it no longer gives you an error.
 // 3. Repeat.
 
-//let function  = sayHello() {
-   // alert("Hello");
-//}
-
-//function sayHello (
-  //alert("Hello");
-//}
-
-//function sayHello {
-//alert("Hello");
-//}
-//------------//
-//let sayHello = function() {
-  //alert("Hello");
-//}
-
 //function sayHello() {
 //alert("Hello");
 //}
@@ -56,7 +40,7 @@ let sayHello = function() {
 // Declare a function that prompts the user's for their favorite drink and logs the following phrase to the console. "Your favorite drink is ________."
 
 let proDrink = function() {
-  prompt("Your favorite drink is ________.");
+  //prompt("Your favorite drink is ________.");
 }
 
 proDrink(); {}
