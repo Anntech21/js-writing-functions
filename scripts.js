@@ -2,10 +2,10 @@
 
 // Navigate to your Github profile page
 // Identify as many different pieces of functionality that likely use functions.
-hamburger, dropdown,etc. everytime arrow turns into a hand its a function
+//hamburger, dropdown,etc. everytime arrow turns into a hand its a function
 
 // List the functions here:
-All places where we can edit and add new information and run it again
+//All places where we can edit and add new information and run it again
 /*********************** Exercise 2 ********************* */
 // Fix each function's syntax so that it will correctly run the code in the code block.
 
@@ -15,8 +15,8 @@ All places where we can edit and add new information and run it again
 // 2. Fix the function so that it no longer gives you an error.
 // 3. Repeat.
 
-function sayHello() {
-alert("Hello");
+function sayHello(name) {
+alert("Hello,");
 }
 
 
@@ -71,15 +71,15 @@ let user = {
 // Make sure not to use the literal string "Trinity" or the words in the `languages` array.
 
 function userGreeting() {
-  let userName = user.fullName.split(" ");
-  let firstName = name[0];
-  text = alert('Welcome, ${firstName}! You know ${user.language.join(",');
-  console.log(userGreeting);
-}
+  alert ("Welcome, " + user.fullName.slice(0, 7) + "! You know " + user.languages[0] + ", " + user.languages[1] +" and " + user.languages[2] + ".")
+};
 
+//user.fullName = "Kristal Thomas";
+//user.languages[1] = "Racket";
 
 // Execute the function.
-userGreeting();{} 
+userGreeting();
+
 
 
 // Below, NOT in a function, change the object's properties in these ways:
@@ -102,21 +102,20 @@ userGreeting();{}
 
 // You can use the following code in your function to calculate the user's approximate age:
 
-
+let todaysYear = "";
+todaysYear = prompt("What is todays year?");
 function userBirthday() {
-let birthday = prompt("Your birth year?");
+let birthYear = prompt("What is your birth year?");
 let todaysDate = new Date();
 let todaysYear = todaysDate.getFullYear();
-let age = todaysYear - Number(birthYear);
-}
+let age = Number(todaysYear) - Number(birthYear);
+console.log ("Your approximate age is " + age)
+};
 
 userBirthday();
 
-
-
 // Execute the function. Feel free to comment it out once you've confirmed it works.
 
-console.log('Your approx age is ${age}');
 
 /*********************** Exercise 7 ********************* */
 
@@ -125,21 +124,22 @@ console.log('Your approx age is ${age}');
 // Inside the function, log the following sentence to the console with the user's responses: "Your age is ____, your favorite color is ______, and your favorite movie is ______".
 
 function userId(){
-  let age = prompt("Your Age?");
-  let color = prompt("Your fav color?");
-  let movie = prompt("Your fav movie?");
+  let ageFromUser = prompt("What is your age?");
+  let colorFromUser = prompt("Wht is your fav color?");
+  let movieFromUser = prompt("What is fav movie?");
 
   let userAnswer = {
-    userAge: age,
-    userColor: color,
-    userMovie: movie,
-  }
+    age: ageFromUser,
+    color: colorFromUser,
+    movie: movieFromUser,
+  };
 
-  console.log('Your age ${userId.userAge} , Your fav color ${userId.userColor} & Your fav movie is ${userId.userMovie}');
+  console.log(`Your age is ${userAnswer.age} , Your fav color ${userAnswer.color} & Your fav movie is ${userAnswer.movie}`);
 }
 
+userId();
 // Execute the function
-console.log(userId);
+
 
 /*********************** Exercise 8 ********************* */
 
@@ -147,3 +147,13 @@ console.log(userId);
 
 // Execute the function three times.
 
+function addTwoNumbers(){
+  let num1 = Number(prompt('Input a number.'))
+  let num2 = Number(prompt('Input another number.'))
+  return num1 + num2 
+}
+
+let result1 = addTwoNumbers()
+console.log(result1)
+
+// Execute the function three times.
